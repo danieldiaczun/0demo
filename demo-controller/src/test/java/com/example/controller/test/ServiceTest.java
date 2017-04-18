@@ -12,9 +12,9 @@ import com.example.service.DemoService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@TestPropertySource({"classpath:application-test.properties", "classpath:sql-server.properties"})
-//@TestPropertySource({"classpath:application-test.properties", "classpath:h2.properties"})
-public class BorrarTest {
+//@TestPropertySource({"classpath:application-test.properties", "classpath:sql-server.properties"})
+@TestPropertySource({"classpath:application-test.properties", "classpath:h2.properties"})
+public class ServiceTest {
 
 	@Autowired
 	private DemoService demoService;
@@ -22,7 +22,8 @@ public class BorrarTest {
 	@Test
 	public void contextLoads() {
 		
-		Demo demo = demoService.findByName("osv");
+		String name = "osv";
+		Demo demo = demoService.findByName(name);
 
 		if (demo != null) {
 			System.out.println(demo.getName());
