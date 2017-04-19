@@ -6,7 +6,7 @@
 	<artifactId>demo-parent</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0.0</version>
-	
+
 	<name>${project.artifactId}</name>
 	<description>${project.artifactId}</description>
 
@@ -20,7 +20,7 @@
 	<modules>
 		<module>demo-shared</module>
 		<module>demo-model</module>
-		<module>demo-repository</module>		
+		<module>demo-repository</module>
 		<module>demo-service</module>
 		<module>demo-presentation</module>
 		<module>demo-controller</module>
@@ -34,7 +34,7 @@
 	</properties>
 
 	<dependencies>
-	
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -46,17 +46,23 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
-	
+
 	</dependencies>
 
 	<repositories>
-	
+
 		<repository>
 			<id>spring-snapshots</id>
 			<name>Spring Snapshots</name>
@@ -65,7 +71,7 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
-		
+
 		<repository>
 			<id>spring-milestones</id>
 			<name>Spring Milestones</name>
@@ -74,11 +80,11 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
-		
+
 	</repositories>
 
 	<pluginRepositories>
-	
+
 		<pluginRepository>
 			<id>spring-snapshots</id>
 			<name>Spring Snapshots</name>
@@ -87,7 +93,7 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</pluginRepository>
-		
+
 		<pluginRepository>
 			<id>spring-milestones</id>
 			<name>Spring Milestones</name>
@@ -96,7 +102,7 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</pluginRepository>
-		
+
 	</pluginRepositories>
 
 </project>
