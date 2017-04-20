@@ -20,6 +20,9 @@ public class DemoController {
 		
 		Demo demo = demoService.findByName("osv");
 		
+		System.out.println("Name: " + demo.getName());
+		System.out.println("Edad: " + demo.getEdad());
+		
 		return demo.getName();
 	}
 }

@@ -14,7 +14,7 @@ import com.example.service.DemoService;
 @SpringBootTest
 //@TestPropertySource({"classpath:application-test.properties", "classpath:sql-server.properties"})
 @TestPropertySource({"classpath:application-test.properties", "classpath:h2.properties"})
-public class ServiceTest {
+public class DemoServiceTest {
 
 	@Autowired
 	private DemoService demoService;
