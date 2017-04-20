@@ -2,9 +2,13 @@ package com.example.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import com.sun.istack.internal.NotNull;
 
 @Entity
 public class Demo {
@@ -13,12 +17,12 @@ public class Demo {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	
-	@Column(nullable = false)
+	@Column(nullable = false, length = 5)
 	private String name;
 	
 	@Column(nullable = false)
 	private Integer edad = 0;
-
+	
 	public Integer getId() {
 		return id;
 	}

@@ -7,6 +7,8 @@ import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -20,6 +22,8 @@ import org.hibernate.annotations.ColumnTransformer;
 import org.hibernate.annotations.Formula;
 import org.hibernate.annotations.Generated;
 import org.hibernate.annotations.GenerationTime;
+
+import com.sun.istack.internal.NotNull;
 
 @Entity
 public class Demo2 {
@@ -57,7 +61,11 @@ public class Demo2 {
 	@ColumnDefault("1.00")
 	@Generated(GenerationTime.INSERT)
 	private BigDecimal initialPrice;
-	
+
+	@Column(nullable = false)
+	@Enumerated(EnumType.STRING)
+	private AuctionType auctionType = AuctionType.HIGHEST_BID;
+
 	@PostLoad
 	private void onLoad() {
 	    this.transientName = name + derivedName;
@@ -125,5 +133,13 @@ public class Demo2 {
 
 	public void setInitialPrice(BigDecimal initialPrice) {
 		this.initialPrice = initialPrice;
+	}
+	
+	public AuctionType getAuctionType() {
+		return auctionType;
+	}
+
+	public void setAuctionType(AuctionType auctionType) {
+		this.auctionType = auctionType;
 	}
 }

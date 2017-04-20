@@ -14,5 +14,6 @@ private Date lastModified;
 @ColumnDefault("1.00")
 @Generated(GenerationTime.INSERT)
 private BigDecimal initialPrice;
-	
+
+insert into demo values (0, 50, 7, {ts '2012-09-17 18:47:52.69'}, 'osv')
 
