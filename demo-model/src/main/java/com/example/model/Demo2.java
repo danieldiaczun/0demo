@@ -23,8 +23,6 @@ import org.hibernate.annotations.Formula;
 import org.hibernate.annotations.Generated;
 import org.hibernate.annotations.GenerationTime;
 
-import com.sun.istack.internal.NotNull;
-
 @Entity
 public class Demo2 {
 
