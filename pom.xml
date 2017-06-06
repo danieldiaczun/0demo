@@ -44,7 +44,6 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 		
@@ -56,7 +55,7 @@
 	
 	</dependencies>
 
-	<repositories>
+	<!--repositories>
 		<repository>
 			<id>spring-snapshots</id>
 			<name>Spring Snapshots</name>
@@ -70,7 +69,7 @@
 			<name>Spring Milestones</name>
 			<url>https://repo.spring.io/milestone</url>
 			<snapshots>
-				<enabled>false</enabled>
+				<enabled>true</enabled>
 			</snapshots>
 		</repository>
 	</repositories>
@@ -89,9 +88,9 @@
 			<name>Spring Milestones</name>
 			<url>https://repo.spring.io/milestone</url>
 			<snapshots>
-				<enabled>false</enabled>
+				<enabled>true</enabled>
 			</snapshots>
 		</pluginRepository>
-	</pluginRepositories>
-
+	</pluginRepositories-->
+	
 </project>
