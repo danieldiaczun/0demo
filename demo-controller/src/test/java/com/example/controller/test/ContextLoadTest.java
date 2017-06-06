@@ -8,8 +8,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-//@TestPropertySource({"classpath:application-test.properties", "classpath:sql-server.properties"})
-@TestPropertySource({"classpath:application-test.properties", "classpath:h2.properties"})
+@TestPropertySource({"classpath:application-test.properties", "classpath:sql-server.properties"})
+//@TestPropertySource({"classpath:application-test.properties", "classpath:h2.properties"})
 public class ContextLoadTest {
 
 	@Test

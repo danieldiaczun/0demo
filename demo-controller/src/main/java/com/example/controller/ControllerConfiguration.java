@@ -6,9 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.example.service.DemoService;
-import com.example.service.ItemService;
-import com.example.service.impl.DemoServiceImpl;
-import com.example.service.impl.ItemServiceImpl;
+import com.example.service.DemoServiceImpl;
 
 @Configuration
 public class ControllerConfiguration {
@@ -26,9 +24,4 @@ public class ControllerConfiguration {
         return demoService;
     }
 
-    @Bean
-    ItemService itemService() {
-        ItemService itemService = new ItemServiceImpl();
-        return itemService;
-    }
 }

@@ -8,4 +8,5 @@ import com.example.model.Demo;
 public interface DemoService {
 	
 	Demo findByName(String name);
+
 }

@@ -2,8 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.example</groupId>
 	<artifactId>demo-model</artifactId>
 	<packaging>jar</packaging>
+	<version>0.0.1-SNAPSHOT</version>
 
 	<name>${project.artifactId}</name>
 	<description>${project.artifactId}</description>
@@ -11,7 +13,7 @@
 	<parent>
 		<artifactId>demo-parent</artifactId>
 		<groupId>com.example</groupId>
-		<version>1.0.0</version>
+		<version>${project.version}</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
