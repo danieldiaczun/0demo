@@ -1,4 +1,4 @@
-package com.example;
+package com.example.controller;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,9 +11,9 @@ import org.springframework.context.annotation.PropertySource;
 //@PropertySource({"classpath:application.properties", "classpath:sql-server.properties"})
 @PropertySource({"classpath:application.properties", "classpath:h2.properties"})
 @ComponentScan(basePackages = {"com.example"})
-public class ControllerApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ControllerApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 }

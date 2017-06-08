@@ -9,7 +9,7 @@ import com.example.service.DemoService;
 import com.example.service.DemoServiceImpl;
 
 @Configuration
-public class ControllerConfiguration {
+public class ApplicationConfiguration {
 	
     @Bean
     ServletRegistrationBean<WebServlet> h2servletRegistration() {
